@@ -11,7 +11,7 @@
 # 5.j=array[len(array)-1], last index. check the number with pivot as j>pivot, if found smaller number then , j stop on index of array . 
 # 6. let i get big number and j get smaller number and (i>j) then pivot , then swap(array[i],array[j]).if(i not = j)
 # 7. then continue for checking number  from i and j , where stopped.
-# 8. if the whileLoop condition break then , (array[l]=0, array[j]...'the last value of j') , cz after whileLoop j will be small number < pivot.
+# 8. if the whileLoop condition break then , swap(array[l]=0, array[j]...'the last value of j (midvalue)') , cz after whileLoop j will be small number < pivot. and then swap().
 # 9. return j.
 
 #QuickSort:---------------------quicksort(array,l,h):
