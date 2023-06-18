@@ -1,0 +1,28 @@
+Data-Structure:
+----------------
+Data Structure are different way of organizing data on a computer that can be used effectively.
+
+Algorithm:
+-----------
+Set of setps to accomplish a task.
+
+Type of Data Structure:
+------------------------
+#primitive : (not use pointer & default in programming Lan.)=> int, float, char, bolean, double.
+
+
+#non-primitive: (refer with pointer ) => a. Linear: *static-> Array , *Dynamic-> Linked list, stack & queue.
+				      => n. Non-Linear: Tree , Graph.
+
+
+
+Type of ALgorithm:
+------------------
+1. simple recursive algorithm.
+2. Divide and conquere algorithm.
+3. Dynamic programming algorithm.
+4. Gready Algorithm.
+5. Brute Force algorithm.
+6. Randomized Algorithm.
+
+ 
