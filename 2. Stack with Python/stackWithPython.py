@@ -1,5 +1,5 @@
 #list is a dynamic array and store data in Block ways in Memory that's why use=> deque form collections.
-
+#LIFO : Last In First Out
 from collections import deque
 
 stack = deque() # declear stack 
