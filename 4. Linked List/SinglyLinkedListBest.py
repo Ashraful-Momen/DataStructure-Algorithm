@@ -14,10 +14,12 @@ class LinkedList: #initially head is None
     def traversal(self):
         if self.head == None: 
             print("List is empty!")
-        while Slist.head is not None: 
-            print(Slist.head.item, end=" ")
-            Slist.head = Slist.head.next 
-    
+            return 
+        node = self.head
+        while node is not None: 
+            print(node.item, end=" ")
+            node = node.next 
+  
     #insert_add_end of Nodes:
     def insert_add_end(self,new_item):
         new_node = Node(new_item) #similar Slist.head = Node(item)
