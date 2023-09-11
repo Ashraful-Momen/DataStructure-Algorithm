@@ -16,7 +16,7 @@ class LinkedList: #initially head is None
             print("List is empty!")
             return 
         node = self.head
-        while node is not None: 
+        while node is not None: # By default it point the node.next address
             print(node.item, end=" ")
             node = node.next 
   
