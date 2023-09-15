@@ -1,2 +1,2 @@
 Circular Linked List: Create a circule between 1st node to last node by connecting address of nodes.
---------------------- 1. Singly Circuler 2.Doubly Circular (CRUD oparetion is same)
+--------------------- 1. Singly Circuler 2.Doubly Circular (CRUD oparetion is same) 
