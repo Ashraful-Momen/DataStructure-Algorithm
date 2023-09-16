@@ -8,20 +8,20 @@
 
 #Binary tree Linked List => Root -> (prev.Nodes.next) that's referens other nodes as child nodes. leafe node address/reference will be null.
 
-# Binary tree childs: x (means)-> level , initially is x=1 ()
-                    # 1.left_node => 2x
+# Binary tree childs: x (means)-> level , initially is x=1 (root node start from here for math easy calculation)
+                    # 1.left_node => 2x 
                     # 2.right_node => 2x+1
 
 # -------------------------create Binary Tree:--------------------------------------------
  
 
-# class TreeNode():
-#     def __init__(self,data):
-#         self.data = data 
-#         self.left = None 
-#         self.right = None 
+class TreeNode():
+    def __init__(self,data):
+        self.data = data 
+        self.left = None 
+        self.right = None 
 
-# newNode = TreeNode('Drink')
+newNode = TreeNode('Drink')
 
 # print((newNode.data))
 
@@ -29,7 +29,6 @@
 # pre_order = root, left, right
 # post_order = left,right,root
 # in_order = left, root, right
-
 
 class TreeNode():
     def __init__(self,data):
@@ -46,6 +45,7 @@ newNode.right = rightChild
 
 # print((newNode.data))
 
+#-------------------------------------------Traversal------------------------------------------
 def PreOrderTravers (rootNode): #root , left, right=> 
     if not rootNode: #if node is not Existence , function disclose here. (if root node exit then it has a memory address either not)
         return 
@@ -81,5 +81,97 @@ def InOrderTravers (rootNode): #left,root, right,  =>
     
 
 
-InOrderTravers(newNode)
+# InOrderTravers(newNode)
 
+# ==============================================Level Ways Traversal Node========================================
+# traversal + point node each other  as PreOrder > root , left ,right . 
+# 
+# 1. print 1 level -> N1
+# 2. print 2 level -> N2(left),    N3(right)
+# 3. print 3 level -> [N4 (left), N5(right)], [N6(left),N7(right)].....
+
+# ----------------------------------------------Level ways Traversal -------------------------------------------------------------------
+
+# import QueueLinkedList  as queue  #import from QueueLinkedList.py Files
+
+
+# def levelOrderTraversal(rootNode):
+
+#     if not rootNode:
+#         return 
+    
+#     else :
+#         customQueue = queue.Queue()
+#         customQueue.enqueue(rootNode)
+#         while not (customQueue.isEmpty()):
+#             root = customQueue.dequeue()
+#             print(root.value.data) #root.value comes form QueueLinkedList file functions , (root.value).data => comes from Here Nodes Class
+#             if (root.value.left) is not None:
+#                 customQueue.enqueue(root.value.left)
+            
+#             if (root.value.right) is not None:
+#                 customQueue.enqueue(root.value.right)
+
+# ----------------------------------------------------------------
+
+# def levelOrderTraversal(rootNode):
+#     if not rootNode:
+#         return 
+
+#     customQueue = queue.Queue()
+#     customQueue.enqueue(rootNode)
+    
+#     while not (customQueue.isEmpty()):
+#         root = customQueue.dequeue()
+#         print(root.value.data)
+
+#         if root.value.left is not None:
+#             customQueue.enqueue(root.value.left)
+        
+#         if root.value.right is not None:
+#             customQueue.enqueue(root.value.right)
+
+
+
+# -----------------------------------------------------
+
+import QueueLinkedList  as queue  #import from QueueLinkedList.py Files
+
+class TreeNode:
+    def __init__(self, data):
+        self.data = data
+        self.leftChild = None
+        self.rightChild = None
+
+newBT = TreeNode("Drinks")
+
+leftChild = TreeNode("Hot")
+rightChild = TreeNode("Cold")
+
+newBT.leftChild = leftChild
+newBT.rightChild = rightChild
+
+tea = TreeNode("Tea")
+coffee = TreeNode("Coffee")
+
+leftChild.leftChild = tea
+leftChild.rightChild = coffee
+
+
+def levelOrderTraversal(rootNode): #--------------------------Level ways Traversal--------------------------
+    if not rootNode:
+        return
+    else:
+        customQueue = queue.Queue()
+        customQueue.enqueue(rootNode)
+        while not(customQueue.isEmpty()):
+            root = customQueue.dequeue()
+            print(root.value.data)
+            if (root.value.leftChild is not None):
+                customQueue.enqueue(root.value.leftChild)
+            
+            if (root.value.rightChild is not None):
+                customQueue.enqueue(root.value.rightChild)
+
+
+levelOrderTraversal(newBT)
