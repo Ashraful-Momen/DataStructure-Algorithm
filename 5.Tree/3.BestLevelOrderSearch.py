@@ -134,6 +134,7 @@ def level_traversal(rootNode): #------------------------------------------------
 
 # print(level_traversal(rootNode))
 
+<<<<<<< HEAD
 # ----------------------------------search Element in BinaryTree----------------------------------
 from queue import Queue 
 
@@ -196,3 +197,9 @@ rootNode = insert(rootNode, 8)
 # rootNode = insert(rootNode, 12)
 
 print(level_traversal(rootNode))
+=======
+
+        
+    
+    
+>>>>>>> b08598f279f64141a449c2a007e7de0ff45cbb8c
