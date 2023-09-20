@@ -51,8 +51,8 @@ def PreOrderTravers (rootNode): #root , left, right=>
         return 
     
     print(rootNode.data) # root 
-    PreOrderTravers(rootNode.left) # left
-    PreOrderTravers(rootNode.right) #right
+    PreOrderTravers(rootNode.left) # left recursion calling
+    PreOrderTravers(rootNode.right) #right recursion calling
 
 
 # PreOrderTravers(newNode)
@@ -63,8 +63,8 @@ def PostOrderTravers (rootNode): #left, right, root , =>
         return 
     
      
-    PostOrderTravers(rootNode.left) # left
-    PostOrderTravers(rootNode.right) #right
+    PostOrderTravers(rootNode.left) # left , recursion calling
+    PostOrderTravers(rootNode.right) #right, recursion calling
     print(rootNode.data) # root
 
 
@@ -75,9 +75,9 @@ def InOrderTravers (rootNode): #left,root, right,  =>
         return 
     
      
-    InOrderTravers(rootNode.left) # left
+    InOrderTravers(rootNode.left) # left , recursion calling 
     print(rootNode.data) # root
-    InOrderTravers(rootNode.right) #right
+    InOrderTravers(rootNode.right) #right, recursion calling
     
 
 
@@ -174,4 +174,5 @@ def levelOrderTraversal(rootNode): #--------------------------Level ways Travers
                 customQueue.enqueue(root.value.rightChild)
 
 
-levelOrderTraversal(newBT)
+# levelOrderTraversal(newBT)
+
