@@ -1,0 +1,8 @@
+Node (vertex) : is the point(place) of graph
+Edage: 1 node to another node connections define as edage . way of visit , node to nodes.
+Directed : which graph has direction node to node .(a->b )
+Undirected : the node has no direction to visit neighbour nodes.(by directional or 2_directions a<->b)
+weighted/unweighted: value of edage is weighted. if no value then unweighted.
+------------------------------------
+adjenci_matrix: 1 for edage connections a -> b | 0 for no edage connections a->b 
+for weighted  : the matrix table represent by value of edage. a->b =7; here 7 is edage of value 
