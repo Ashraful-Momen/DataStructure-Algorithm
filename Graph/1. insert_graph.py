@@ -11,11 +11,11 @@ def add_node(v): #here v is the vertex
         nodes.append(v)
         nodes_count += 1
 
-        # add new column at last as 0 for new_node in every row:
+        # add new column at end as 0 for new_node in every row:
         for n in graph:
             n.append(0)
 
-        # add new col for new nodes: 
+        # add new row in last for new nodes in : 
         tem = [] # this tem works as column
 
         for x in range(nodes_count): 
