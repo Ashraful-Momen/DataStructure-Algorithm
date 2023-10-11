@@ -3,7 +3,7 @@ def add_node(vertex):
         print("Node already exits") 
     
     else: 
-        #add vertex into the graph: 
+        #add vertex into the graph: add in  dictionary -> graph[key]=[value]
         graph[vertex]= []
 
 
