@@ -62,6 +62,28 @@ def delete_node_weighted(v):#-----------------------------------------------
                     edges.remove(edge)
                     break
 
+def delete_edage_unweighted(v1,v2): #------------------------------
+    if v1 not in graph:
+        print(f"{v1} does not exit in The Graph")
+    elif v2 not in graph:
+        print(f"{v2} does not exit in The Graph")
+    else: 
+        if v2 in graph[v1]:
+            graph[v1].remove(v2) # a->b , remove
+            graph[v2].remove(v1) # b->a , remove
+
+def delete_edage_weighted(v1,v2,cost): #------------------------------
+    if v1 not in graph:
+        print(f"{v1} does not exit in The Graph")
+    elif v2 not in graph:
+        print(f"{v2} does not exit in The Graph")
+    else: 
+        temp = [v1,cost]
+        temp1 = [v2,cost]
+        if temp1 in graph[v1]:
+            graph[v1].remove(temp1)
+            graph[v2].remove(temp)
+
 
 graph = {}
 
@@ -70,16 +92,40 @@ if __name__ == '__main__':
     add_node("B")
     add_node("C")
 
-    add_edge("A", "B")
-    add_edage_weighted("A", "C",80)
-    # add_edge("B", "C")
+    # add_edge("A", "B")
+    # add_edge("A", "C")
 
-    # delete_node_unweighted("C")
-    # delete_node_unweighted("B")
+    # print("Before Delete the Graph")
+    # print(graph)
 
-    delete_node_weighted("C")
+    # # delete_node_unweighted("C")
+    # # delete_node_unweighted("B")
 
+    # delete_edage_unweighted("A","C")
+    # print("After Delete the Graph")
+    # print(graph)
+
+
+
+    add_edage_weighted("A", "B",50)
+    add_edage_weighted("A", "C",100)
+
+    print("Before Delete the Graph")
     print(graph)
+
+    # delete_node_weighted("C")
+    # delete_node_weighted("B")
+
+    delete_edage_weighted("A","C",100) # if cost not match with those node then eadges not deleted.
+    print("After Delete the Graph")
+    print(graph)
+
+
+
+
+
+
+    
 
 
 
