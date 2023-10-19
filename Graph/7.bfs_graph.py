@@ -27,20 +27,21 @@ BFS(Graph, start_vertex):
 
 """
 
-from collections import defaultdict, deque
 
 def bfs(graph, start_vertex):
-    visited = set()
-    queue = deque([start_vertex])
-    visited.add(start_vertex)
+    visited = []
+    queue = []
+
+    visited.append(start_vertex)
+    queue.append(start_vertex)
 
     while queue:
-        current_vertex = queue.popleft()
-        print(current_vertex, end=" ")
+        node = queue.pop(0)
+        print(node, end=" ")
 
-        for neighbor in graph[current_vertex]:
+        for neighbor in graph[node]:
             if neighbor not in visited:
-                visited.add(neighbor)
+                visited.append(neighbor)
                 queue.append(neighbor)
 
 # Example usage
