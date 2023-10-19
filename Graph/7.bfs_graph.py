@@ -46,7 +46,7 @@ def bfs(graph, start_vertex):
 
 # Example usage
 # Create an adjacency list representing a graph
-graph = defaultdict(list)
+graph = {}
 graph[0] = [1, 2]
 graph[1] = [2]
 graph[2] = [0, 3]
