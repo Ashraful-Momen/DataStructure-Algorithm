@@ -29,6 +29,11 @@ BFS(Graph, start_vertex):
 
 
 def bfs(graph, start_vertex):
+
+    if start_vertex not in graph: 
+        print(f'{start_vertex} does not exit in the graph.')
+        return 
+
     visited = []
     queue = []
 
