@@ -1,0 +1,148 @@
+Here’s a comprehensive list of **Data Structures and Algorithms (DSA)** that every programmer should know, organized by categories:
+
+---
+
+## **Data Structures**  
+
+1. **Arrays**  
+   - One-dimensional and multi-dimensional arrays  
+   - Prefix sum, Sliding window, Kadane’s algorithm  
+
+2. **Linked Lists**  
+   - Singly linked list  
+   - Doubly linked list  
+   - Circular linked list  
+   - Operations: Insertion, Deletion, Reversal  
+
+3. **Stacks**  
+   - Implementations using arrays or linked lists  
+   - Applications: Infix to postfix conversion, Balancing parentheses, Recursion  
+
+4. **Queues**  
+   - Simple Queue  
+   - Circular Queue  
+   - Priority Queue  
+   - Deque (Double-ended Queue)  
+
+5. **Hashing / Hash Tables**  
+   - Hash maps (Dictionary in Python)  
+   - Collision resolution (Chaining, Open Addressing)  
+   - Applications: Caching, Counting frequency  
+
+6. **Strings**  
+   - String Matching Algorithms (KMP, Rabin-Karp)  
+   - Suffix Arrays, Tries (Prefix Trees)  
+   - Palindromes, Substrings, Anagram detection  
+
+7. **Trees**  
+   - Binary Tree, Binary Search Tree (BST)  
+   - AVL Tree, Red-Black Tree  
+   - Segment Tree, Fenwick Tree (Binary Indexed Tree)  
+   - N-ary Tree, Trie  
+
+8. **Heaps**  
+   - Min-Heap, Max-Heap  
+   - Heap Sort  
+   - Priority Queues  
+
+9. **Graphs**  
+   - Representations: Adjacency List, Adjacency Matrix  
+   - Directed and Undirected Graphs  
+   - Weighted and Unweighted Graphs  
+   - Trees as special graphs  
+
+---
+
+## **Algorithms**  
+
+### **Searching Algorithms**  
+   - Linear Search  
+   - Binary Search (Iterative and Recursive)  
+   - Exponential Search  
+   - Interpolation Search  
+
+### **Sorting Algorithms**  
+   - Bubble Sort, Selection Sort, Insertion Sort  
+   - Merge Sort, Quick Sort  
+   - Heap Sort, Radix Sort, Counting Sort  
+
+### **Graph Algorithms**  
+   - Breadth-First Search (BFS), Depth-First Search (DFS)  
+   - Dijkstra’s Algorithm (Shortest Path)  
+   - Bellman-Ford Algorithm  
+   - Floyd-Warshall Algorithm  
+   - Prim’s and Kruskal’s Algorithm (Minimum Spanning Tree)  
+   - Topological Sorting  
+
+### **Dynamic Programming (DP)**  
+   - Memoization vs Tabulation  
+   - Longest Common Subsequence (LCS), Longest Increasing Subsequence (LIS)  
+   - Knapsack Problem (0/1 Knapsack, Fractional Knapsack)  
+   - Matrix Chain Multiplication  
+   - Coin Change Problem  
+
+### **Greedy Algorithms**  
+   - Activity Selection Problem  
+   - Huffman Encoding  
+   - Fractional Knapsack Problem  
+   - Dijkstra’s Algorithm (also categorized under greedy)  
+
+### **Backtracking**  
+   - N-Queens Problem  
+   - Sudoku Solver  
+   - Subset Sum Problem  
+   - Word Search  
+
+### **Divide and Conquer**  
+   - Binary Search  
+   - Merge Sort and Quick Sort  
+   - Matrix Multiplication using Strassen’s Algorithm  
+
+### **Recursion**  
+   - Factorial, Fibonacci Series  
+   - Tower of Hanoi  
+   - Subset Generation  
+
+### **Mathematical Algorithms**  
+   - GCD and LCM using Euclid’s algorithm  
+   - Sieve of Eratosthenes (Prime Numbers)  
+   - Modular Arithmetic, Fast Exponentiation  
+
+### **Bit Manipulation**  
+   - Checking if a number is a power of 2  
+   - Count set bits (Hamming Weight)  
+   - XOR-based problems (Finding the missing number)  
+
+---
+
+## **Other Important Concepts**  
+
+1. **Two Pointers Technique**  
+   - Problems like Pair Sum, Triplet Sum, Container with Most Water  
+
+2. **Sliding Window Technique**  
+   - Maximum Sum Subarray of Size K  
+   - Longest Substring with K Unique Characters  
+
+3. **Union-Find (Disjoint Set)**  
+   - Union by Rank and Path Compression  
+   - Applications: Detecting Cycles in Graphs  
+
+4. **Trie (Prefix Tree)**  
+   - Storing a dictionary of words efficiently  
+   - Auto-complete systems  
+
+5. **Segment Trees & Fenwick Trees**  
+   - Range Queries  
+   - Point Updates  
+
+---
+
+## **How to Approach Learning DSA**  
+
+1. **Start with the Basics:** Arrays, Strings, Stacks, and Queues  
+2. **Practice Easy-to-Medium Problems:** Platforms like LeetCode, Codeforces, or GeeksforGeeks  
+3. **Learn by Implementing:** Build real-world applications using trees and graphs  
+4. **Participate in Competitions:** Join coding contests to improve problem-solving speed  
+
+This list covers the core topics every programmer needs for interviews, competitive programming, and real-world development.
