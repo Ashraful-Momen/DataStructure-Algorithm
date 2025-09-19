@@ -1,3 +1,15 @@
+#Quick Sort is a stable but merge is not stable 
+
+> take last number from array as pivot. [we can select pivot any num from arr but best is the last index of array]
+
+> compare number with pivot , 
+    
+    > if the number is smaller than pivot , then put the number in left side in the array . 
+
+    > if the number is bigger or equal than pivot , then put the number in right side in the array . 
+
+
+
 # array = [10,3,1,80,33,7,4,2]
 # Quick Sort = [1,2,3,4,7,q->10,33,80] # [smaller number , quicksort element , big number ]
 
@@ -138,4 +150,5 @@ array= [101,11, 9, 29, 7, 2, 15, 28,0]
 quicksort(array,0, len(array)-1)
 
 print(array)
+
 
