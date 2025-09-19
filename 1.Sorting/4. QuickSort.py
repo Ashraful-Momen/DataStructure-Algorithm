@@ -147,8 +147,9 @@ def quicksort(array,i,j):
 
 array= [101,11, 9, 29, 7, 2, 15, 28,0]
 
-quicksort(array,0, len(array)-1)
+quicksort(array,0, len(array)-1)  # quicksor(arr, start_point, end_point)  |  => arr[1,2,3,4]  => len(arr): 4,  len() = total count (1-based), indexing = 0-based. 
 
 print(array)
+
 
 
